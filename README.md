@@ -4,7 +4,7 @@ A no bullshit type-safe vector library for C that supports operator `[]` for
 indexing.
 
 ## Example
-```
+```c
 #include "cvec.h"
 
 int *x = NULL; /* initialize to NULL, replace *int* with any type you want */
@@ -29,8 +29,8 @@ functions sort of cast to `void*` but that is standard practice in C.
 
 ## API
 
-Note that *VECTOR* is any pointer type and that the API is mostly implemented
-using macros. The macros all take *VECTOR* arguments and all other arguments
+Note that `VECTOR` is any pointer type and that the API is mostly implemented
+using macros. The macros all take `VECTOR` arguments and all other arguments
 are expected to be `size_t`.
 
 ##### vector_try_grow(VECTOR, MORE)
