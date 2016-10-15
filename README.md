@@ -33,41 +33,41 @@ Note that *VECTOR* is any pointer type and that the API is mostly implemented
 using macros. The macros all take *VECTOR* arguments and all other arguments
 are expected to be `size_t`.
 
-#### vector_try_grow(VECTOR, MORE)
-Attempts to grow *VECTOR* by *MORE*
+##### vector_try_grow(VECTOR, MORE)
+Attempts to grow `VECTOR` by `MORE`
 
-#### vector_meta(VECTOR)
-Get the metadata block for *VECTOR*
+##### vector_meta(VECTOR)
+Get the metadata block for `VECTOR`
 
-#### vector_free(VECTOR)
-Deletes *VECTOR* and sets it to `NULL`
+##### vector_free(VECTOR)
+Deletes `VECTOR` and sets it to `NULL`
 
-#### vector_push(VECTOR, VALUE)
-Pushes back *VALUE* into *VECTOR*
+##### vector_push(VECTOR, VALUE)
+Pushes back `VALUE` into `VECTOR`
 
-#### vector_size(VECTOR)
-Get the size of *VECTOR*
+##### vector_size(VECTOR)
+Get the size of `VECTOR`
 
-#### vector_capacity(VECTOR)
-Get the capacity of *VECTOR*
+##### vector_capacity(VECTOR)
+Get the capacity of `VECTOR`
 
-#### vector_resize(VECTOR, SIZE)
-Resize *VECTOR* to accomodate *SIZE* more elements
+##### vector_resize(VECTOR, SIZE)
+Resize `VECTOR` to accomodate `SIZE` more elements
 
-#### vector_last(VECTOR)
-Get the last element in *VECTOR*
+##### vector_last(VECTOR)
+Get the last element in `VECTOR`
 
-#### vector_pop(VECTOR)
-Pop an element off the back of *VECTOR*
+##### vector_pop(VECTOR)
+Pop an element off the back of `VECTOR`
 
-#### vector_shrinkto(VECTOR, SIZE)
-Shrink the size of *VECTOR* down to *SIZE*
+##### vector_shrinkto(VECTOR, SIZE)
+Shrink the size of `VECTOR` down to `SIZE`
 
-#### vector_shrinkby(VECTOR, AMOUNT)
-Shrink *VECTOR* down by *AMOUNT*
+##### vector_shrinkby(VECTOR, AMOUNT)
+Shrink `VECTOR` down by `AMOUNT`
 
-#### vector_append(VECTOR, COUNT, POINTER)
-Append to *VECTOR*, *COUNT* elements from *POINTER*
+##### vector_append(VECTOR, COUNT, POINTER)
+Append to `VECTOR`, `COUNT` elements from `POINTER`
 
-#### vector_remove(VECTOR, INDEX, COUNT)
-Remove from *VECTOR*, *COUNT* elements starting from *INDEX*
+##### vector_remove(VECTOR, INDEX, COUNT)
+Remove from `VECTOR`, `COUNT` elements starting from `INDEX`
