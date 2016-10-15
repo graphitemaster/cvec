@@ -30,8 +30,9 @@ functions sort of cast to `void*` but that is standard practice in C.
 ## API
 
 Note that `VECTOR` is any pointer type and that the API is mostly implemented
-using macros. The macros all take `VECTOR` arguments and all other arguments
-are expected to be `size_t`.
+using macros. The macros all take `VECTOR` argument, size and indexing
+arguments are expected to be `size_t`. The macros which push back a value
+expect the pointer's base type.
 
 ##### vector_try_grow(VECTOR, MORE)
 Attempts to grow `VECTOR` by `MORE`
