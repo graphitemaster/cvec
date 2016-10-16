@@ -8,10 +8,11 @@ typedef struct {
     size_t used;
 } vector_t;
 
+
 /* Attempts to grow [VECTOR] by [MORE]*/
 #define vector_try_grow(VECTOR, MORE) \
     (((!(VECTOR) || vector_meta(VECTOR)->used + (MORE) >= vector_meta(VECTOR)->allocated)) ? \
-        (void)vector_grow(((void **)&(VECTOR)), (MORE), sizeof(*(VECTOR))) : (void)0)
+        (void)vec_grow(((void **)&(VECTOR)), (MORE), sizeof(*(VECTOR))) : (void)0)
 
 /* Get the metadata block for [VECTOR] */
 #define vector_meta(VECTOR) \
@@ -19,7 +20,7 @@ typedef struct {
 
 /* Deletes [VECTOR] and sets it to NULL */
 #define vector_free(VECTOR) \
-    ((void)((VECTOR) ? (vector_delete((void *)(VECTOR)), (VECTOR) = NULL) : 0))
+    ((void)((VECTOR) ? (vec_delete((void *)(VECTOR)), (VECTOR) = NULL) : 0))
 
 /* Pushes back [VALUE] into [VECTOR] */
 #define vector_push(VECTOR, VALUE) \
