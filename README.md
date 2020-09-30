@@ -1,6 +1,6 @@
 # cvec
 
-A no bullshit type-safe vector library for C that supports operator `[]` for
+A type-safe vector library for C that supports operator `[]` for
 indexing.
 
 ## Example
